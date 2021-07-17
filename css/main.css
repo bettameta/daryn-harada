@@ -176,6 +176,14 @@ header h2 span {
     font-weight: lighter;
     line-height: 44px;
     margin: -30px 0 5px 0;
+    
+}
+#contact a:hover{
+    color: #c68736;
+}
+
+#contact img a:hover{
+     {font-size: 150%;}
 }
 
 /****  OR FIND ME  *****/
