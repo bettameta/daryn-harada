@@ -1,4 +1,6 @@
-/***** BASE STYLES *****/
+/*-------------------------------------
+            BASE STYLES
+--------------------------------------*/
 html{
     font-size: 16px;
 }
@@ -10,6 +12,7 @@ body{
     background-color: #ebebeb;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .flex-container{
@@ -20,7 +23,7 @@ body{
     flex-flow: row wrap;
 }
 
-/***** GRID *****/
+/**** GRID ****/
 
 .full-width {
     width: 100%;   
@@ -34,11 +37,7 @@ body{
     width: 100%;    
 }
 
-/***** Font Sizing *****/
-/* Work and Contact sections */
-
-
-/* Hover Styling */
+/**** Hover Styling ****/
 a:hover {
     color: #c68736;
 }
@@ -55,9 +54,16 @@ header,
     overflow: auto;
 }
 
-/*************************/
-/*****  MOBILE FIRST *****/
-/*****  HEADER  *****/
+/*-------------------------------------
+             MOBILE STYLES
+--------------------------------------*/
+/****  HEADER  ****/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero-img{
     background-image: linear-gradient(rgba(155, 153, 153, 0.5), 
     rgba(0, 0, 0, 0.5)),
@@ -72,9 +78,10 @@ header,
 h2 { 
     font-family: 'lora', serif;
     font-weight: bold;
-    text-align: center;
+    justify-content: center;
     margin: 0;
     font-size: 2em;
+    padding-left: 20px;
 }
 
 header h2 a{
@@ -86,8 +93,9 @@ header h2 a{
 
 /***** NAV *****/
 nav {
-    margin-right: 30px;
-    text-align: center;
+    margin-right: 110px;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul{
@@ -119,21 +127,13 @@ h1 {
     font-family: 'lora', serif;   
     color: #ebebeb;
     padding-top: 18px;
+    margin-bottom: 10px
 }
 
 h1 span {
     color: #c68736;
     text-shadow: .5px .5px #2b2b2b;
 }
-
-header h2 .divider{
-    height: 5 px;
-    background-color: #648b75;
-    width: 100%;
-}
-
-
-
 
 
 /***** ABOUT *****/
@@ -181,8 +181,6 @@ header h2 .divider{
     margin: 50px 0;
 }
 
-
-
 #work p {
     font-family: 'lora', serif;
     font-size: 1.12em;
@@ -191,11 +189,11 @@ header h2 .divider{
 }
 
 #work .divider{
-    height: 20px;
+    height: 10px;
     background-color: #ebebeb;
     width: 100%;
-  
 }
+
 /*****  FOOTER/ CONTACT  *****/
 
 #contact{
@@ -287,15 +285,45 @@ h3 #email-header{
      display: inline-block;
 }
 
-.copy h5{
+h5{
     width: 100%;
     font-size: .5em;
     font-weight: 400;
-    text-align: center;
     margin: 30 0 0 0;
 }
 
+/*-------------------------------------
+                MEDIA QUERIES
+--------------------------------------*/
+@media (min-width: 768px){
 
+    .full-width{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .third-width{
+       
+    }
+    #work .divider{
+        display: none;
+    }
+    #work img {
+        margin: 20px 0;
+
+    }
+
+    h5{
+        width: 100%;
+        font-size: .1em;
+        font-weight: 400;
+        margin: 30px 0 0 0;
+    }
+}
+    
+@media (min-width: 1200px){
+
+}
 
 /*-------------------------------------
             PORTFOLIO PAGE              
