@@ -102,6 +102,7 @@ nav ul{
     list-style-type: none;
     padding: 15px 0;
     margin: 0;
+    font-size: 1.4em;
 }
 
 nav li{
@@ -151,7 +152,7 @@ h1 span {
 }
  
 #about p {
-    font-size: 1.12em;
+    font-size: 1.2em;
     color: #7f7f7f;
     line-height: 40px;
     padding: 0 50px;
@@ -268,15 +269,13 @@ h3 #email-header{
     text-decoration: none;
     color:  #648b75;
     font-weight: 900;
-    font-size: 1.2em;
-  
+    font-size: 1.2em; 
 }
 
 /***** SOCIAL MEDIA ICONS  *****/
 
 #contact ul {
-    list-style: none;
-   
+    list-style: none;  
 }
 
 #contact ul li {
@@ -292,6 +291,31 @@ h5{
 }
 
 /*-------------------------------------
+            PORTFOLIO PAGE              
+--------------------------------------*/
+/* MUST TREAT HEADER SEPARATELY IN DESKTOP STYLE  There is no div with quote */ 
+#portfolio{
+    background: url('../img/love-locks.jpg') left;
+    border-top: solid #2b2b2b 10px;
+    border-bottom: solid #2b2b2b 10px;
+    height: 1100px;
+    width: 100%;
+}
+
+#portfolio h6{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.text{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+
+/*-------------------------------------
                 MEDIA QUERIES
 --------------------------------------*/
 @media (min-width: 768px){
@@ -301,6 +325,9 @@ h5{
         width: 50%;
     }
 
+    h2 a{
+        font-size: 1.9em;
+    }
     header nav{
         margin: 0;
 
@@ -332,12 +359,20 @@ h5{
     #about .full-width{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-flow: row wrap;    
     }
     #about h2{
         width: 100%;
     }
+
+    #about p {
+        font-size: 1.4em;
+        line-height: 40px;
+        padding: 0 40px;
+        margin-bottom: 50px;
+    }
+
     #about .half-width{
         width: 47%;
     }
@@ -360,7 +395,10 @@ h5{
     }
     #work img {
         margin: 20px 0;
+    }
 
+    #work p{
+        font-size: 1.3em;
     }
 
     /*** Footer/ Contact ***/
@@ -371,12 +409,6 @@ h5{
         flex-flow: row wrap; 
     }
 
-    #contact-img {
-        border: 7px solid #c68736;
-        
-       
-    }
-
     #contact .full-width{
         display: flex;
         justify-content: center;
@@ -384,19 +416,63 @@ h5{
         flex-flow: row-wrap;
     }
 
-    footer .half-width{
-        width: 50%;
+    #contact .half-width{
+        width: 47%;
         margin: 0;
     }
+
+    #contact-img {
+        border: 7px solid #c68736; 
+        width: 600px; 
+    }
+
+    #contact h3,
+    #contact p{
+        font-size: 1.5em;
+    }
+
+    #contact p{
+        margin: 0px 0 10px 0;
+    }
+
+    #contact h4 a{
+        font-size: 1.7em;
+    }
+
+    #contact #socialmedia-header {
+        font-size: 1.5em; 
+        margin-top: 50px;
+    }
+
+    #contact a{
+        font-size: 1.8em;
+    }
+
     
     /*** Copy ***/
     h5{
         width: 100%;
-        font-size: .1em;
+        font-size: 1em;
         font-weight: 400;
         margin: 30px 0 0 0;
     }
 
+/*-------------------------------------
+            PORTFOLIO PAGE              
+--------------------------------------*/
+/* MUST TREAT HEADER SEPARATELY IN DESKTOP STYLE  There is no div with quote */ 
+    #portfolio h6{
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+    
+    .text{
+        text-align: center;
+        margin-top: 20px;;
+        font-size: 2em;;
+    }
+    
 
 }
     
@@ -404,26 +480,4 @@ h5{
 
 }
 
-/*-------------------------------------
-            PORTFOLIO PAGE              
---------------------------------------*/
-/* MUST TREAT HEADER SEPARATELY IN DESKTOP STYLE  There is no div with quote */ 
- #portfolio{
-    background: url('../img/love-locks.jpg') left;
-    border-top: solid #2b2b2b 10px;
-    border-bottom: solid #2b2b2b 10px;
-    height: 1100px;
-    width: 100%;
-}
-
-#portfolio h6{
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.text{
-    text-align: center;
-    margin-top: 20px;;
-}
 
