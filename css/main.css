@@ -413,6 +413,8 @@ main{
     height: 100%;
     background: url('../img/love-locks.jpg') left;
     padding: 40px 0 900px;
+    border-top: solid #2b2b2b 10px;
+    border-bottom: solid #2b2b2b 10px;
 }
 
 .portfolio h2{
