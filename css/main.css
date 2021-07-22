@@ -62,6 +62,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: red solid 1px;
 }
 
 .hero-img{
@@ -75,25 +76,21 @@ header{
 }
 
 /*  NAME */
-h2 { 
+h2 a{ 
     font-family: 'lora', serif;
     font-weight: bold;
-    justify-content: center;
     margin: 0;
-    font-size: 2em;
-    padding-left: 20px;
-}
-
-header h2 a{
+    font-size: 1.5em;
+    margin: 0 30px 10px 31px;
     text-decoration: none;
     color: #5d806c;
     text-shadow: .5px 1px #2b2b2b;
-    
+    border: red solid 1px;
 }
 
 /***** NAV *****/
 nav {
-    margin-right: 110px;
+    margin-right: 200px;
     display: flex;
     justify-content: center;
 }
@@ -121,13 +118,13 @@ nav ul li a {
 /* Hello, I am... */
 h1 {
     font-size: 1.9em;
-    text-align: center;
-    width: 100%;
+    width: 65%;
     clear: both;
     font-family: 'lora', serif;   
     color: #ebebeb;
-    padding-top: 18px;
-    margin-bottom: 10px
+    padding: 0px 30px;
+    margin-bottom: 10px;
+    border: red solid 1px;
 }
 
 h1 span {
@@ -185,11 +182,12 @@ h1 span {
     font-family: 'lora', serif;
     font-size: 1.12em;
     line-height: 30px;
-    padding: 0 50px 80px 50px;
+    padding: 0 50px 60px 50px;
 }
 
+
 #work .divider{
-    height: 10px;
+    height: 3px;
     background-color: #ebebeb;
     width: 100%;
 }
@@ -206,7 +204,7 @@ h1 span {
 }
 
 #contact-img {
-    border: 7px solid #648b75;
+    border: 7px solid #c68736;
     max-width: 300px;
 }
 
@@ -297,13 +295,56 @@ h5{
 --------------------------------------*/
 @media (min-width: 768px){
 
-    .full-width{
+    /*** Header ***/
+    header .half-width{
+        width: 50%;
+    }
+
+    header nav{
+        margin: 0;
+
+    }
+
+    header nav ul{
+        display: flex;
+        justify-content: end;
+        flex: row;
+    }
+
+    nav li{
+        padding-right: 30px;
+    }
+
+    h1{
+        width: 70%;
+    }
+
+    /*** About ***/
+    #about .full-width{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-flow: row wrap;    
     }
+    #about h2{
+        width: 100%;
+    }
+    #about .half-width{
+        width: 47%;
+    }
+
     .third-width{
-       
+        margin-top: 40px;
+    }
+    
+    /*** Work ***/
+    #work .full-width{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #work h2{
+        width: 100%;
     }
     #work .divider{
         display: none;
@@ -313,11 +354,31 @@ h5{
 
     }
 
+    /*** Footer ***/
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap; 
+    }
+
+    footer .half-width{
+        width: 55%;
+        margin: 0;
+        border: red solid 2px;
+    }
+    
+
     h5{
         width: 100%;
         font-size: .1em;
         font-weight: 400;
         margin: 30px 0 0 0;
+    }
+
+    #contact-img {
+        border: 7px solid #c68736;
+        max-width: 400px;
     }
 }
     
