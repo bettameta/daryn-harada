@@ -42,6 +42,10 @@ a:hover {
     color: #c68736;
 }
 
+h2 a:hover{
+    color: #648b75;
+}
+
 /**** FLEX ZONES ****/
 header, 
 #about, 
@@ -62,7 +66,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: red solid 1px;
 }
 
 .hero-img{
@@ -83,9 +86,8 @@ h2 a{
     font-size: 1.5em;
     margin: 0 30px 10px 31px;
     text-decoration: none;
-    color: #5d806c;
+    color: #c68736;
     text-shadow: .5px 1px #2b2b2b;
-    border: red solid 1px;
 }
 
 /***** NAV *****/
@@ -124,7 +126,6 @@ h1 {
     color: #ebebeb;
     padding: 0px 30px;
     margin-bottom: 10px;
-    border: red solid 1px;
 }
 
 h1 span {
@@ -145,6 +146,7 @@ h1 span {
     font-family: 'lora', serif;
     font-size: 1.4em;
     text-align: center;
+    color: #2b2b2b
 }
  
 #about p {
@@ -359,13 +361,14 @@ h5{
     /*** Footer/ Contact ***/
     footer{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-flow: row wrap; 
     }
 
     #contact-img {
         border: 7px solid #c68736;
+        
        
     }
 
