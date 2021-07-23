@@ -69,7 +69,7 @@ header,
 --------------------------------------*/
 /****  HEADER  ****/
 .hero-img{
-    background-image: linear-gradient(rgba(7, 7, 7, 0.4), 
+    background-image: linear-gradient(to right, rgba(7, 7, 7, 0.7), 
     rgba(12, 12, 12, 0.4)),
         url(../img/woman-smile.jpg);
     background-size: cover;
@@ -87,7 +87,7 @@ h2 a{
     margin: 0 30px 10px 20px;
     text-decoration: none;
     color: #ce7e16;
-    text-shadow: .8px .3px #e1e1e1;
+    /*text-shadow: .8px .3px #e1e1e1;*/
 }
 
 /***** NAV *****/
@@ -132,7 +132,7 @@ h1 {
 
 h1 span {
     color: #ce7e16;
-    text-shadow: .8px .3px #e1e1e1;
+    /*text-shadow: .8px .3px #e1e1e1;*/
 }
 
 
