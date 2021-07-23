@@ -84,7 +84,7 @@ h2 a{
     font-weight: bold;
     margin: 0;
     font-size: 1.2em;
-    margin: 0 30px 10px 40px;
+    margin: 0 30px 10px 20px;
     text-decoration: none;
     color: #ce7e16;
     text-shadow: .8px .3px #e1e1e1;
@@ -94,8 +94,7 @@ h2 a{
 nav {
     display: flex;
     justify-content: left;
-    padding: 0 30px 30px;
-    margin-left: 30px;
+    padding: 0 30px 0px 60px;
 }
 
 nav ul{
@@ -127,7 +126,7 @@ h1 {
     font-family: 'lora', serif;   
     color: #ebebeb;
     padding: 0;
-    margin:  15px 0 30px 40px;
+    margin:  15px 0 30px 20px;
 }
 
 h1 span {
@@ -342,7 +341,7 @@ h5{
         display: flex;
         justify-content: left;
         padding: 0 40px;
-        margin-left: 50px;
+        margin-left: 0px;
         margin-bottom: 80px;
     }
 
