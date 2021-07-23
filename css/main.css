@@ -220,6 +220,8 @@ h1 span {
 
 #contact #envelope {
   padding-right: 10px;
+  width: 20px;
+  text-align: center;
 }
 
 /*****  LOOKING FOR ME?  *****/
@@ -444,6 +446,11 @@ h5{
 
     #contact h4 a{
         font-size: 1.7em;
+    }
+
+    #contact #envelope{
+        width: 1.6em;
+        text-align: center;
     }
 
     #contact #socialmedia-header {
