@@ -83,8 +83,8 @@ h2 a{
     font-family: 'lora', serif;
     font-weight: bold;
     margin: 0;
-    font-size: 1.5em;
-    margin: 0 30px 10px 31px;
+    font-size: 1.2em;
+    margin: 0 30px 10px 40px;
     text-decoration: none;
     color: #ce7e16;
     text-shadow: .8px .3px #e1e1e1;
@@ -94,15 +94,15 @@ h2 a{
 nav {
     display: flex;
     justify-content: left;
-    padding: 0 30px;
-    margin-left: 100px;
+    padding: 0 30px 30px;
+    margin-left: 30px;
 }
 
 nav ul{
     list-style-type: none;
-    padding: 15px 0;
+    padding: 0;
     margin: 0;
-    font-size: 1.4em;
+    
 }
 
 nav li{
@@ -113,7 +113,7 @@ nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: normal;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #ebebeb;
     text-shadow: 1px .5px #2b2b2b;
    
@@ -121,13 +121,13 @@ nav ul li a {
 
 /* Hello, I am... */
 h1 {
-    font-size: 1.7em;
-    width: 65%;
+    font-size: 1.8em;
+    width: 64%;
     clear: both;
     font-family: 'lora', serif;   
     color: #ebebeb;
-    padding: 0px 30px;
-    margin-bottom: 40px;
+    padding: 0;
+    margin:  15px 0 30px 40px;
 }
 
 h1 span {
@@ -324,38 +324,37 @@ h5{
 @media (min-width: 768px){
 
     /*** Header ***/
-    header .half-width{
-        width: 50%;
-    }
-
     h2 a{
         font-size: 1.9em;
+        margin-top: -20px;
     }
-    header nav{
-        margin: 0;
 
-    }
 
     header nav ul{
         display: flex;
         justify-content: end;
         flex: row;
+        margin-top: 30px;
+        font-size: 1.3em;
     }
 
     nav{
         display: flex;
         justify-content: left;
-        padding: 0 30px;
-        margin-left: 100px;
+        padding: 0 40px;
+        margin-left: 50px;
+        margin-bottom: 80px;
     }
 
     nav li{
-        padding-right: 30px;
+        padding-left: 30px;
     }
 
     h1{
         width: 70%;
         font-size: 3em;
+        margin: 0px 0 30px 65px;
+        width: 62%;
     }
 
     /*** About ***/
@@ -467,9 +466,8 @@ h5{
     #portfolio h6{
         text-align: center;
         font-size: 2.5em;
-        margin-bottom: 20px;
     }
-    
+
     .text{
         text-align: center;
         margin-top: 20px;;
