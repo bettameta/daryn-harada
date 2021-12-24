@@ -333,6 +333,10 @@ h5{
         margin-top: -20px;
     }
 
+    header h2{
+        margin-left: 40px;
+    }
+
 
     header nav ul{
         display: flex;
